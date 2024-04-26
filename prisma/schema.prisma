@@ -7,7 +7,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Post {
+model Todo {
   id        String    @id @default(uuid()) @map("_id")
   todo      String
   createdAt DateTime  @default(now())
