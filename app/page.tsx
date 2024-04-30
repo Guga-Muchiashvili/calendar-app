@@ -17,7 +17,7 @@ export default function Home() {
   const submit = async () => {
     if (task.current) {
       const res = await PostTodo({ title: task.current.value, dispatch : dispatch });
-      task.current.value = ''; 
+      task.current.value = ''
     }
   };
 
@@ -32,7 +32,7 @@ export default function Home() {
     };
 
     fetchData();
-  }, []);
+  }, [])
 
   return (
     <main className="w-full min-h-screen flex justify-center items-center flex-col py-5 ">
